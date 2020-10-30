@@ -1,0 +1,11 @@
+span:nth-child(1) { //Pegando o primeiro Span
+    background-image: linear-gradient(90deg, #007cf0, #00dfd8); //Fundo em gradiente. saindo de 90 graus da primeira cor paraa segunda cor
+}
+span:nth-child(2) { //Pegando o Segundo Span
+    background-image: linear-gradient(90deg, #7928ca, #ff0080); //Fundo em gradiente. saindo de 90 graus da primeira cor paraa segunda cor
+    animation-delay: 3.33s; //O segundo span ficará atrasado 3.33segundos na animação
+}
+span:nth-child(3) { //Pegando o Terceiro Span
+    background-image: linear-gradient(90deg, #ff4d4d, #f9cb28); //Fundo em gradiente. saindo de 90 graus da primeira cor paraa segunda cor
+    animation-delay: 6.66s;//O Terceiro span ficará atrasado 6.66segundos na animação
+}

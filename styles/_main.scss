@@ -1,0 +1,101 @@
+@keyframes colorCycle {
+    0%, 55% {//Quando chegar em 0% e 55% remover a cor será branca
+        //filter: brightness(0);  = Gostei. Resultado Massa. aparecimento da letra
+        filter: brightness(0) invert(1); //Invertendo, texto começando branco e mudando para a cor.
+    }
+    11%, 33% { //Quando chegar em 11% e 33% remover o filrer, que esta branco e aplicar a cor
+        filter: none;
+    }
+}
+
+main {
+    
+    max-width: 104.8rem;
+    padding: 5.6rem 2.4rem;//Ajustar o texto para não colar na tela
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    font-size: 12.8rem;
+    line-height: 12.8rem;
+    /* letter-spacing: -1.0rem; */
+    color: var(--white);
+
+    span {
+        padding: 0 0.67rem;
+        filter: brightness(0) invert(1); //Sempre começar com a cor branca no texto - para depois mudar
+
+        background-clip: text;
+        -webkit-background-clip: text; //Dar suporte a mais navegadores
+        -webkit-text-fill-color: transparent;
+
+        animation: colorCycle 10s ease-in-out infinite;
+    }
+
+    span:nth-child(1) { //Pegando o primeiro Span
+        background-image: linear-gradient(90deg, rgb(4, 29, 255), #65aad8); //Fundo em gradiente. saindo de 90 graus da primeira cor paraa segunda cor
+    }
+    span:nth-child(2) { //Pegando o Segundo Span
+        background-image: linear-gradient(90deg, #7928ca, #ff0080); //Fundo em gradiente. saindo de 90 graus da primeira cor paraa segunda cor
+        animation-delay: 3.33s; //O segundo span ficará atrasado 3.33segundos na animação
+    }
+    span:nth-child(3) { //Pegando o Terceiro Span
+        background-image: linear-gradient(90deg, #ff4d4d, #f9cb28); //Fundo em gradiente. saindo de 90 graus da primeira cor paraa segunda cor
+        animation-delay: 6.66s;//O Terceiro span ficará atrasado 6.66segundos na animação
+    }
+   
+}
+
+.buttons{
+    margin-top: 6.4rem;
+
+    display: flex;
+    align-items: center;
+
+    >button {
+        background: var(--white);
+        color: var(--black);
+        border-radius: 0.4rem;
+        
+        margin: 1.2rem;
+        padding: 1.5rem 4.5rem;
+        border: 0.1rem solid var(--white);
+
+        font-size: 1.6rem;
+        font-weight: 500;
+
+        cursor: pointer;
+        transition: 0.2s ease-in;
+
+        &.outlined{
+            background: transparent;
+            color: var(--gray);
+            border: 0.1rem solid var(--gray);
+        }
+
+        &:hover{
+            background: transparent;
+            color: var(--white);
+            border: 0.1rem solid var(--white);
+        }
+    }
+
+  }
+
+  h2{
+      margin: 6.4rem 0; //= 64px
+      font-size: 2rem; //=20px
+      font-weight: 400;
+      letter-spacing: -0.04rem;
+      text-align: center;
+  }
+}
