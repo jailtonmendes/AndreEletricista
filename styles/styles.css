@@ -57,7 +57,7 @@ header .left {
 }
 
 header .left img {
-  height: 300%;
+  height: 400%;
   
 }
 
@@ -225,8 +225,6 @@ main .buttons {
 
 main .buttons > button {
 
-  background-image: linear-gradient(90deg, #5851DB, #833AB4);
-  /* background: var(--white); */
   color: var(--black);
   border-radius: 0.4rem;
   margin: 1.2rem;
@@ -239,23 +237,31 @@ main .buttons > button {
   transition: 0.2s ease-in;
 }
 
-main .buttons > button.outlined {
+main .buttons > .insta {
+  background: rgb(100, 18, 69);
+  color: var(--white);
+  border: 0.1rem solid var(--white);
+}
+
+main .buttons > button.insta:hover {
   background: transparent;
-  color: var(--gray);
+  color: var(--white);
+  border: 0.1rem solid var(--white);
+}
+
+main .buttons > button.outlined {
+  background: #3f729b;
+  
+  color: var(--white);
   border: 0.1rem solid var(--gray);
 }
 
 main .buttons > button.outlined:hover {
-  background: #3f729b;
-  color: var(--white);
-  border: 0.1rem solid var(--white);
-}
-
-main .buttons > button:hover {
   background: transparent;
   color: var(--white);
   border: 0.1rem solid var(--white);
 }
+
 
 main h2 {
   margin: 6.4rem 0;
@@ -263,6 +269,33 @@ main h2 {
   font-weight: 400;
   letter-spacing: -0.04rem;
   text-align: center;
+}
+
+.quemsomos {
+  background: var(--white);
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+/*Centralizando o card*/
+.card { 
+  margin: 0 auto;
+  display: flex;
+  
+}
+
+.quemsomos .card img {
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 25%;
+  height: 80%;
+}
+
+.eu {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 
@@ -273,6 +306,6 @@ footer {
   font-weight: 700;
   letter-spacing: 0.32rem;
   text-align: center;
-  margin-bottom: 4.8rem;
+  /* margin-bottom: 4.8rem; */
 }
 /*# sourceMappingURL=styles.css.map */
