@@ -238,26 +238,40 @@ main .buttons > button {
 }
 
 main .buttons > .insta {
-  background: rgb(100, 18, 69);
+  background: transparent;
   color: var(--white);
   border: 0.1rem solid var(--white);
 }
 
 main .buttons > button.insta:hover {
-  background: transparent;
+  background: rgb(100, 18, 69);
   color: var(--white);
   border: 0.1rem solid var(--white);
 }
 
+
 main .buttons > button.outlined {
-  background: #3f729b;
   
+  background: transparent;
   color: var(--white);
   border: 0.1rem solid var(--gray);
 }
 
 main .buttons > button.outlined:hover {
+  background: #3f729b;
+  color: var(--white);
+  border: 0.1rem solid var(--white);
+}
+
+main .buttons > .whatssap {
   background: transparent;
+  color: var(--white);
+  border: 0.1rem solid var(--white);
+}
+
+main .buttons > button.whatssap:hover {
+  background: rgb(32, 100, 18);
+  
   color: var(--white);
   border: 0.1rem solid var(--white);
 }
