@@ -216,7 +216,7 @@ main h1 span:nth-child(3) {
 
 
 main .buttons {
-  margin-top: 6.4rem;
+  margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,7 +256,7 @@ main .buttons > button.outlined {
   
   background: transparent;
   color: var(--white);
-  border: 0.1rem solid var(--gray);
+  border: 0.1rem solid var(--white);
 }
 
 main .buttons > button.outlined:hover {
@@ -309,6 +309,15 @@ main h2 {
   height: 80%;
 }
 
+/*Centro*/
+.centro {
+margin: 20px;
+
+
+}
+
+
+
 
 /*Serviços*/
 
@@ -344,7 +353,7 @@ main h2 {
   font-weight: bold;
   padding: 10px 0 5px 0;
   border-top: 4px solid var(--Honeydew);
-  border-bottom: 4px solid var(--Honeydew);
+  /* border-bottom: 4px solid var(--Honeydew); */
 }
 
 .servico-item sup {
